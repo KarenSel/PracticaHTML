@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <header>
+<h1>IFRAME</h1>
+    <a href="../index.html">Pagina Principal</a>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Lista de secciones</h2>
+            <ul>
+                <li><a href="#IFRAME1">Iframe con archivos de la Practica</a></li>
+                <li><a href="#IFRAME2">Iframe con PDF's</a></li>
+                <li><a href="#IFRAME3">Iframe con URL</a></li>
+                
+            </ul>
+        </section>
+        <section>
+            <h2 id="IFRAME1">Iframe con archivos de la Practica</h2>
+            <ul>
+                <li>
+                    <a href="../Ejercicios/A-encabezado.html" target="iframe_practicas">Encabezado</a>
+                </li>
+                <li>
+                    <a href="../Ejercicios/D-listas.html" target="iframe_practicas">Listas</a>
+                </li>
+                <li>
+                    <a href="../Ejercicios/E-tablas.html" target="iframe_practicas">Tablas</a>
+                </li>
+            </ul>
+            <iframe name="iframe_practicas" src="../Ejercicios" style="width: 100%; height: 800px;"></iframe>
+        </section>
+        <hr>
+        <section>
+            <h2 id="IFRAME2">Iframe con PDF's</h2>
+            <a href=""></a>
+            <ol>
+                <li><a href="../pdfs/Evoluciòn de la tipografia.pdf" target="iframe_pdf">Evoluciòn Tipografía</a></li>
+                <li><a href="../pdfs/Guion Podcast - Cap 1.pdf" target="iframe_pdf">Guion Podcast</a></li>
+                <li><a href="../pdfs/POSTER_CALL_BICeBe2025.pdf" target="iframe_pdf">Poster call</a></li>
+            </ol>
+            <iframe name="iframe_pdf" src="../pdfs" style="width: 100%; height: 800px;"></iframe>
+        </section>
+        <hr>
+        <section>
+            <h2 id="IFRAME3">Iframe con URL</h2>
+            <ul>
+                <li>
+                    <a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n" target="iframe_wiki">Programacion</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="iframe_wiki"> HTMl</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" target="iframe_wiki">Html Info</a>
+                </li>
+            </ul>
+            <iframe name="iframe_wiki" src="https://en.wikipedia.org/wiki/HTMLs" style="width: 100%; height: 800px;"></iframe>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="../index.html">Volver a Pagina Principal</a>
+    </footer>
+</body>
+</html>

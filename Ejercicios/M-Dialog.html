@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+</head>
+<body>
+    <header>
+        <h1>DIALOG</h1>
+    <a href="../index.html">Pagina Principal</a>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <button onclick="alert('Redacción Publicitaria II')">Botón 1</button>
+            <button onclick="alert('Publicidad II')">Botón 2</button>
+            <button onclick="alert(' Diseño Gráfico')">Botón 3</button>
+            <button onclick="alert('Historia del Diseño')">Botón 4</button>
+            <button onclick="alert('Producción Audiovisual')">Botón 5</button>
+            
+            <button onclick="document.getElementById('mensaje1').showModal()">Botón 6</button>
+            <button onclick="document.getElementById('mensaje2').showModal()">Botón 7</button>
+            <button onclick="document.getElementById('mensaje3').showModal()">Botón 8</button>
+            <button onclick="document.getElementById('mensaje4').showModal()">Botón 9</button>
+            <button onclick="document.getElementById('mensaje5').showModal()">Botón 10</button>
+            
+            <dialog id="mensaje1">
+                <p>Marketing Digital</p>
+                <button onclick="document.getElementById('mensaje1').close()">Cerrar</button>
+            </dialog>
+            <dialog id="mensaje2">
+                <p>Teoría del Color</p>
+                <button onclick="document.getElementById('mensaje2').close()">Cerrar</button>
+            </dialog>
+            <dialog id="mensaje3">
+                <p>Identidad Visual</p>
+                <button onclick="document.getElementById('mensaje3').close()">Cerrar</button>
+            </dialog>
+            <dialog id="mensaje4">
+                <p>Ilustración Digital</p>
+                <button onclick="document.getElementById('mensaje4').close()">Cerrar</button>
+            </dialog>
+            <dialog id="mensaje5">
+                <p> Tipografía</p>
+                <button onclick="document.getElementById('mensaje5').close()">Cerrar</button>
+            </dialog>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="../index.html">Volver a Pagina Principal</a>
+    </footer>
+</body>
+</html>

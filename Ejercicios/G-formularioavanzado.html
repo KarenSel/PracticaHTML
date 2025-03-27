@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Avanzados</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIOS AVANZADOS</h1>
+        <a href="../index.html">Pagina Principal</a>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Lista de secciones</h2>
+            <ul>
+                <li><a href="#FA1">Formulario Avanzado 1</a></li>
+                <li><a href="#FA2">Formulario Avanzado 2</a></li>
+                <li><a href="#FA3">Formulario Avanzado 3</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="FA1">Formulario Avanzado 1</h2>
+            <form>
+                <fieldset>
+                    <legend>Formulario Avanzado 2</legend>
+                    <label for="readonly">Solo lectura:</label>
+                    <input type="text" id="readonly" value="Ejemplo de solo lectura" readonly><br><br>
+                    
+                    <label for="disabled">Deshabilitado:</label>
+                    <input type="text" id="disabled" value="Ejemplo deshabilitado" disabled><br><br>
+                    
+                    <label for="placeholder">Texto de ayuda:</label>
+                    <input type="text" id="placeholder" placeholder="Escribe algo aquí..."><br><br>
+                </fieldset>
+            </form>
+           
+        </section>
+        <section>
+            <h2 id="FA2">Formulario Avanzado 2</h2>
+            <form>
+                <fieldset>
+                    <legend>Datalist</legend>
+                    <label for="opciones">Selección normal:</label>
+                    <select id="opciones" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select><br><br>
+                    
+                    <label>Selección en grupo:</label>
+                    <select required>
+                        <optgroup label="Grupo 1">
+                            <option value="g1op1">Opción 1</option>
+                            <option value="g1op2">Opción 2</option>
+                        </optgroup>
+                        <optgroup label="Grupo 2">
+                            <option value="g2op1">Opción 3</option>
+                            <option value="g2op2">Opción 4</option>
+                        </optgroup>
+                    </select><br><br>
+                    
+                    <label for="datalist">Datalist:</label>
+                    <input list="opcionesDatalist" id="datalist" required>
+                    <datalist id="opcionesDatalist">
+                        <option value="Opción A">
+                        <option value="Opción B">
+                        <option value="Opción C">
+                    </datalist><br><br>
+
+                    <div><button>enviar</button> <button>borrar</button></div>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h2 id="FA3">Formulario Avanzado 3</h2>
+            <form>
+               <fieldset>
+                <legend>Datos de usuario 2</legend>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" required placeholder="Ingrese su nombre completo"><br><br>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" required placeholder="Ingrese su correo"><br><br>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required placeholder="Ingrese su número de teléfono"><br><br>
+                
+                <label for="materias">Seleccione sus materias:</label>
+                <select id="materias" multiple required>
+                    <option value="mat1">Matemáticas</option>
+                    <option value="mat2">Física</option>
+                    <option value="mat3">Historia</option>
+                    <option value="mat4">Literatura</option>
+                </select><br><br>
+                
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" placeholder="Escriba sus observaciones aquí..."></textarea><br><br>
+                
+                <button >Enviar</button>
+                <button >borrar</button>
+               </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="../index.html">Volver a Pagina Principal</a>
+    </footer>
+</body>
+</html>

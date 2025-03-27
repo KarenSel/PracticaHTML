@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover</title>
+</head>
+<body>
+    <header>
+        <h1>ATRIBUTO POPOVER</h1>
+        <a href="../index.html">Pagina Principal
+
+        </a></header>
+    <hr>
+    <main>
+        <section>
+            <button onclick="alert('Mensaje 1: Redacción Publicitaria II')">Botón 1</button>
+            <button onclick="alert('Mensaje 2: Publicidad II')">Botón 2</button>
+            <button onclick="alert('Mensaje 3: Diseño Gráfico')">Botón 3</button>
+            <button onclick="alert('Mensaje 4: Historia del Diseño')">Botón 4</button>
+            <button onclick="alert('Mensaje 5: Producción Audiovisual')">Botón 5</button>
+            
+            <button popovertarget="mensaje1">Botón 6</button>
+            <button popovertarget="mensaje2">Botón 7</button>
+            <button popovertarget="mensaje3">Botón 8</button>
+            <button popovertarget="mensaje4">Botón 9</button>
+            <button popovertarget="mensaje5">Botón 10</button>
+            
+            <div id="mensaje1" popover>
+                <p>Marketing Digital</p>
+                <button popovertarget="mensaje1">Cerrar</button>
+            </div>
+            <div id="mensaje2" popover>
+                <p>Teoría del Color</p>
+                <button popovertarget="mensaje2">Cerrar</button>
+            </div>
+            <div id="mensaje3" popover>
+                <p>Identidad Visual</p>
+                <button popovertarget="mensaje3">Cerrar</button>
+            </div>
+            <div id="mensaje4" popover>
+                <p>Ilustración Digital</p>
+                <button popovertarget="mensaje4">Cerrar</button>
+            </div>
+            <div id="mensaje5" popover>
+                <p>Tipografía</p>
+                <button popovertarget="mensaje5">Cerrar</button>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="../index.html">Volver a Pagina Principal</a>
+    </footer>
+</body>
+</html>
